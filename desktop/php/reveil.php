@@ -99,8 +99,8 @@ $eqLogics = eqLogic::byType('reveil');
 								</sup>
 							</label>
 							<div class="col-sm-5">
-							<input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
-								<input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom du groupe de zones}}"/>
+								<input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
+								<input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom du reveil}}"/>
 							</div>
 						</div>
 						<div class="form-group">
@@ -154,6 +154,17 @@ $eqLogics = eqLogic::byType('reveil');
 								<input type="checkbox" class="eqLogicAttr" data-label-text="{{Visible}}" data-l1key="isVisible"/>
 							</div>
 						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label" >
+								{{Temps après un snooze}}
+								<sup>
+									<i class="fa fa-question-circle tooltips" title="Saisir le temps pour un snooze" style="font-size : 1em;color:grey;"></i>
+								</sup>
+							</label>
+							<div class="col-sm-5">
+								<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="snooze" placeholder="{{Temps snooze (min)}}"/>
+							</div>
+						</div>
 					</fieldset>
 				</form>
 			</div>		
@@ -201,7 +212,7 @@ $eqLogics = eqLogic::byType('reveil');
 					<thead>
 						<tr>
 							<th></th>
-							<th>Condition</th>
+							<th>{{Condition}}</th>
 						</tr>
 					</thead>
 					<tbody></tbody>
@@ -225,7 +236,8 @@ $eqLogics = eqLogic::byType('reveil');
 					<thead>
 						<tr>
 							<th></th>
-							<th>Action</th>
+							<th>{{Action}}</th>
+							<th>{{Déclencheur}}</th>
 						</tr>
 					</thead>
 					<tbody></tbody>
@@ -235,8 +247,8 @@ $eqLogics = eqLogic::byType('reveil');
 				<table id="table_cmd" class="table table-bordered table-condensed">
 				    <thead>
 					<tr>
-					    <th>Nom</th>
-					    <th>Paramètre</th>
+					    <th>{{Nom}}</th>
+					    <th>{{Paramètre}}</th>
 					</tr>
 				    </thead>
 				    <tbody></tbody>
